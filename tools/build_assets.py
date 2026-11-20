@@ -61,25 +61,25 @@ def hero(shots):
         im.paste(strip, (x, top))
         x += strip.size[0] + 36
 
-    spaced(d, (44, 44), "DYLAN AGEMA", font("consolab.ttf", 22), FG, 2.5)
-    mono = font("consola.ttf", 15)
-    spaced(d, (44, h - 78), "MACHINE LEARNING + HOUSE SITTING", mono, MUTED, 1.6)
-    spaced(d, (44, h - 54), "BOULDER, CO", mono, MUTED, 1.6)
+    spaced(d, (44, 42), "DYLAN AGEMA", font("consolab.ttf", 28), FG, 3.2)
+    mono = font("consola.ttf", 18)
+    spaced(d, (44, h - 86), "MACHINE LEARNING + HOUSE SITTING", mono, MUTED, 1.4)
+    spaced(d, (44, h - 58), "BOULDER, CO", mono, MUTED, 1.4)
 
     rounded(im, 22).save(OUT / "hero.png", optimize=True)
 
 
-def product_card(shots, name, src, box, title, line, tag):
+def product_card(shots, name, src, box, title, line):
+    # The card is shown at about a third of its size, so the caption type is large on purpose.
     shot = Image.open(shots / src).convert("RGB").crop(box).resize((800, 450), Image.LANCZOS)
-    w, h = 800, 640
+    w, h = 800, 620
     im = Image.new("RGB", (w, h), PANEL)
     im.paste(shot, (0, 0))
     d = ImageDraw.Draw(im)
     d.line([(0, 450), (w, 450)], fill=BORDER, width=2)
-    d.ellipse([36, 494, 54, 512], fill=MOSS)
-    spaced(d, (70, 482), title, font("consolab.ttf", 38), FG, 3)
-    d.text((36, 540), line, font=font("segoeui.ttf", 33), fill=(203, 199, 189))
-    spaced(d, (36, 594), tag, font("consola.ttf", 22), AMBER, 2)
+    d.ellipse([36, 492, 56, 512], fill=MOSS)
+    spaced(d, (74, 478), title, font("consolab.ttf", 44), FG, 3)
+    d.text((36, 546), line, font=font("segoeui.ttf", 38), fill=(203, 199, 189))
     d.rounded_rectangle([1, 1, w - 2, h - 2], 26, outline=BORDER, width=2)
     rounded(im, 26).save(OUT / f"card-{name}.png", optimize=True)
 
@@ -128,11 +128,11 @@ def main():
         shots = Path(sys.argv[1])
         hero(shots)
         product_card(shots, "chainstay", "chainstay2x.png", (560, 110, 2320, 1100),
-                     "CHAINSTAY", "House-sit alerts, seconds after posting.", "LIVE · INVITE-ONLY")
+                     "CHAINSTAY", "House-sit alerts in seconds")
         product_card(shots, "site", "site.png", (560, 60, 1440, 555),
-                     "DYLANAGEMA.COM", "Four years of sits, one photo strip each.", "LIVE")
-        product_card(shots, "mochi", "mochi2x.png", (560, 30, 2320, 1020),
-                     "MOCHI'S LEGACY", "A therapy-dog nonprofit in Boulder.", "LIVE · PUBLIC SOURCE")
+                     "DYLANAGEMA.COM", "Four years of sits in photos")
+        product_card(shots, "mochi", "mochi2x.png", (800, 1020, 1654, 1500),
+                     "MOCHI'S LEGACY", "Therapy dogs in Boulder")
 
 
 if __name__ == "__main__":
