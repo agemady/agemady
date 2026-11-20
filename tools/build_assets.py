@@ -62,9 +62,6 @@ def hero(shots):
         x += strip.size[0] + 36
 
     spaced(d, (44, 44), "DYLAN AGEMA", font("consolab.ttf", 22), FG, 2.5)
-    serif = font("georgia.ttf", 44)
-    for i, line in enumerate(["Tools for a life", "spent in other", "people's homes."]):
-        d.text((42, 142 + i * 58), line, font=serif, fill=FG)
     mono = font("consola.ttf", 15)
     spaced(d, (44, h - 78), "MACHINE LEARNING + HOUSE SITTING", mono, MUTED, 1.6)
     spaced(d, (44, h - 54), "BOULDER, CO", mono, MUTED, 1.6)

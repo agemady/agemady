@@ -1,4 +1,4 @@
-<a href="https://www.dylanagema.com"><img src="assets/hero.png" width="100%" alt="Dylan Agema. Tools for a life spent in other people's homes. Machine learning and house sitting, Boulder, Colorado. Photo strips from three sits: a doodle in a field, a long-haired cat under pine branches, and a retriever among dandelions."></a>
+<a href="https://www.dylanagema.com"><img src="assets/hero.png" width="100%" alt="Dylan Agema. Machine learning and house sitting, Boulder, Colorado. Photo strips from three sits: a doodle in a field, a long-haired cat under pine branches, and a retriever among dandelions."></a>
 
 <p align="center">
   <samp>
