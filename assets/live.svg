@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Facts from chainstay’s data. Luna is the most common name for dogs (329) and for cats (316). 275 listings say the pet sleeps in the bed. 11 say it is not allowed on the furniture. 21 pets are named Chicken. None of them is a chicken.">
+  <style>
+    .label { font: 600 15px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #9a968e; }
+    .scope { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 2px; fill: #d3a172; }
+    .val { font: 400 84px Georgia, 'Times New Roman', serif; fill: #ebe8df; }
+    .cap { font: 400 27px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #cbc7bd; }
+    .sval { font: 400 40px Georgia, 'Times New Roman', serif; fill: #ebe8df; }
+    .scap { font: 400 18px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #9a968e; }
+    .dot { fill: #8fb487; }
+    .tick { fill: #3a3a35; }
+    .tick-on { fill: #d3a172; }
+    /* Without animation only the first fact shows. */
+    .fact, .tick-on { opacity: 0; }
+    .first { opacity: 1; }
+    @media (prefers-reduced-motion: no-preference) {
+      .dot { animation: pulse 2.4s ease-in-out infinite; }
+      .fact, .tick-on { animation: cycle 18s linear infinite; }
+      .d0 { animation-delay: -0.5s; }
+      .d1 { animation-delay: 5.5s; }
+      .d2 { animation-delay: 11.5s; }
+    }
+    @keyframes cycle { 0% { opacity: 0; } 2% { opacity: 1; } 31.33% { opacity: 1; } 33.33% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+  </style>
+  <rect x="1" y="1" width="1198" height="338" rx="20" fill="#1b1b19" stroke="#3a3a35" stroke-width="2"/>
+  <circle class="dot" cx="50" cy="45" r="6"/>
+  <text class="label" x="68" y="50">CHAINSTAY · FROM THE DATA</text>
+  <text class="label" x="1156" y="50" text-anchor="end">REFRESHED 20 NOV 2026 · RELOAD FOR ANOTHER</text>
+  <g class="fact d0 first">
+    <text class="scope" x="46" y="98">ON RECORD · 67,279 PETS</text>
+    <text class="val" x="44" y="186">Luna</text>
+    <text class="cap" x="46" y="234">is the most common name for dogs (329)</text>
+    <text class="cap" x="46" y="270">and for cats (316)</text>
+  </g>
+  <g class="fact d1">
+    <text class="scope" x="46" y="98">OPEN NOW · WORDS IN 5,571 LISTINGS</text>
+    <text class="val" x="44" y="186">275 listings</text>
+    <text class="cap" x="46" y="234">say the pet sleeps in the bed.</text>
+    <text class="cap" x="46" y="270">11 say it is not allowed on the furniture</text>
+  </g>
+  <g class="fact d2">
+    <text class="scope" x="46" y="98">ON RECORD · 67,279 PETS</text>
+    <text class="val" x="44" y="186">21 pets</text>
+    <text class="cap" x="46" y="234">are named Chicken.</text>
+    <text class="cap" x="46" y="270">None of them is a chicken</text>
+  </g>
+  <rect class="tick" x="46" y="302" width="28" height="4" rx="2"/><rect class="tick-on d0 first" x="46" y="302" width="28" height="4" rx="2"/>
+  <rect class="tick" x="82" y="302" width="28" height="4" rx="2"/><rect class="tick-on d1" x="82" y="302" width="28" height="4" rx="2"/>
+  <rect class="tick" x="118" y="302" width="28" height="4" rx="2"/><rect class="tick-on d2" x="118" y="302" width="28" height="4" rx="2"/>
+  <line x1="800" y1="84" x2="800" y2="306" stroke="#3a3a35" stroke-width="2"/>
+  <text class="sval" x="840" y="128">1,022</text>
+  <text class="scap" x="840" y="156">new sits in the last 24 hours</text>
+  <text class="sval" x="840" y="208">6 s</text>
+  <text class="scap" x="840" y="236">median, posted to seen</text>
+  <text class="sval" x="840" y="288">341</text>
+  <text class="scap" x="840" y="316">checks in the last hour</text>
+</svg>

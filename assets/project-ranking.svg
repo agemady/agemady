@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200" role="img" aria-label="HOME-QUALITY MODELS: Nice homes. A score from a home's photos, and a model of your own taste">
+  <style>
+    .label { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1.6px; fill: #9a968e; }
+    .title { font: 400 40px Georgia, 'Times New Roman', serif; fill: #ebe8df; }
+    .cap { font: 400 19px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #cbc7bd; }
+    .dot { fill: #8fb487; animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+  </style>
+  <rect x="1" y="1" width="398" height="198" rx="16" fill="#1b1b19" stroke="#3a3a35" stroke-width="2"/>
+  <text class="label" x="24" y="40">HOME-QUALITY MODELS</text>
+  <text class="title" x="24" y="110">Nice homes</text>
+  <text class="cap" x="24" y="152">A score from a home's photos,</text>
+  <text class="cap" x="24" y="177">and a model of your own taste</text>
+</svg>
