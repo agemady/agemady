@@ -8,7 +8,7 @@
   </samp>
 </p>
 
-I like dogs, photography, math, and living in strangers' homes.
+Dogs, photography, ML, and living in strangers' homes.
 
 <a href="https://www.dylanagema.com/chainstay/"><img src="https://yhkzgnjiejbdzvgbldxy.supabase.co/functions/v1/fact-card" width="100%" alt="Three facts from chainstay's data, such as the most common pet name on record or how many open listings say the pet sleeps in the bed, beside three live numbers from the service."></a>
 
